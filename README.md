@@ -4,7 +4,10 @@ This repository contains a learning and testing process of supervised machine le
 - Negative
 - Neutral 
 The project demonstrates end-to-end Natural Language Processing (NLP) workflow development, including data preprocessing, feature engineering, model training, evaluation, and deployment-ready inference.
-
+the purpsoe of the model is to understand of the words base on their absolute meaning, and their meaning base on the context.
+for example:
+good -> possitive
+not good -> negative
 ##techniques used:
 1) NLP Preprocessing: tokenization, stopword removal(in some models), lemmatization .
 2) Feature Extraction: TF-IDF, word embeddings (implemented both, word embedding has achieved better results).
@@ -14,3 +17,14 @@ The project demonstrates end-to-end Natural Language Processing (NLP) workflow d
 
 ##Data Set
 the used dataset is a collection of labeled tweets, including slang word
+
+## preprocessing
+
+    1) clean the text
+        - lowercasing
+        - remove links and useranames
+        - reduce reapted letters (soo -> so)
+        - remove special character and letters
+        - remove extra spaces
+        - split the sentence into words
+        - lemmatize(going -> go, better -> well
