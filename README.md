@@ -27,4 +27,10 @@ the used dataset is a collection of labeled tweets, including slang word
         - remove special character and letters
         - remove extra spaces
         - split the sentence into words
-        - lemmatize(going -> go, better -> well
+        - lemmatize(going -> go, better -> well, teeth -> tooth)
+    2) tokenization and sequencing
+        - associate a word(text) to a value(token) base on a vocabulary
+        - pad the sequence into a single input length
+    3) features engeneering
+        a layer that will give a value of a vector(d dimentions), each demention determine the similarity or disimilarity of the word(work like an attention layer)
+
